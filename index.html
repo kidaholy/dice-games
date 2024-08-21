@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Dice</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
 
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Dice</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
 
-    <div class="container">
-      <div class="heading">
-        <img src="./images/flag.png" alt="flag">
-        <h1>Refresh Me</h1>
-        <img class="usa-flag" src="./images/USA.png" alt="usa flag">
-      </div>
+</head>
 
-      <div class="dice" onClick="window.location.reload();">
-        <p >Ethiopia</p>
-        <img class="img1" src="./images/dice1.png" alt="dice1">
-      </div>
+<body>
 
-      <div class="dice">
-        <p>America</p>
-        <img class="img2" src="./images/dice1.png" alt="dice6">
-      </div>
-
+  <div class="container">
+    <div class="heading">
+      <img src="./images/flag.png" alt="flag">
+      <h1>Refresh Me</h1>
+      <img class="usa-flag" src="./images/USA.png" alt="usa flag">
     </div>
 
-    <div class="play-button">
-      <button onClick="window.location.reload();">Play</button>
+    <div class="dice" onClick="window.location.reload();">
+      <p>Ethiopia</p>
+      <img class="img1" src="./images/dice1.png" alt="dice1">
     </div>
 
-    <script src="index.js"></script>
-  </body>
+    <div class="dice">
+      <p>America</p>
+      <img class="img2" src="./images/dice1.png" alt="dice6">
+    </div>
 
-  <footer>
-    www 🎲 App Brewery 🎲 com
-  </footer>
+  </div>
+
+  <div class="play-button">
+    <button onClick="window.location.reload();">Play</button>
+  </div>
+
+  <div class="score">
+    <div class="score-text">
+      <h2>Score</h2>
+    </div>
+    <div class="result">
+      <p>Won:</p>
+      <p class="paragraph" id="Ethiopia">0</p>
+      <p>Lose:</p>
+      <p class="paragraph" id="America">0</p>
+      <p>Draw:</p>
+      <p class="paragraph" id="draw">0</p>
+    </div>
+    <div class="reset-button">
+      <button onclick="
+      score.Ethiopia = 0;
+      score.America = 0;
+      score.draw = 0;
+      localStorage.removeItem('score');
+      window.location.reload();
+      ">Reset Score</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+<footer>
+  www 🎲 Kidus Yosef 🎲 com
+</footer>
+
 </html>
