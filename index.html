@@ -12,6 +12,28 @@
 <body>
 
   <div class="container">
+    <div class="score">
+      <div class="score-text">
+        <h2>Score</h2>
+      </div>
+      <div class="result">
+        <p>Ethiopia:</p>
+        <p class="paragraph" id="Ethiopia">0</p>
+        <p>America:</p>
+        <p class="paragraph" id="America">0</p>
+        <p>Draw:</p>
+        <p class="paragraph" id="draw">0</p>
+      </div>
+      <div class="reset-button">
+        <button onclick="
+        score.Ethiopia = 0;
+        score.America = 0;
+        score.draw = 0;
+        localStorage.removeItem('score');
+        window.location.reload();
+        ">Reset Score</button>
+      </div>
+    </div>
     <div class="heading">
       <img src="./images/flag.png" alt="flag">
       <h1>Refresh Me</h1>
@@ -32,29 +54,6 @@
 
   <div class="play-button">
     <button onClick="window.location.reload();">Play</button>
-  </div>
-
-  <div class="score">
-    <div class="score-text">
-      <h2>Score</h2>
-    </div>
-    <div class="result">
-      <p>Won:</p>
-      <p class="paragraph" id="Ethiopia">0</p>
-      <p>Lose:</p>
-      <p class="paragraph" id="America">0</p>
-      <p>Draw:</p>
-      <p class="paragraph" id="draw">0</p>
-    </div>
-    <div class="reset-button">
-      <button onclick="
-      score.Ethiopia = 0;
-      score.America = 0;
-      score.draw = 0;
-      localStorage.removeItem('score');
-      window.location.reload();
-      ">Reset Score</button>
-    </div>
   </div>
 
   <script src="index.js"></script>
