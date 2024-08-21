@@ -1,5 +1,5 @@
 .container {
-  width: 70%;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -67,10 +67,8 @@ footer {
   cursor: pointer;
 }
 .score {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 200px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid lightgrey;
   background-color: #232931;
 }
