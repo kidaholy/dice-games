@@ -66,3 +66,47 @@ footer {
   font-family: 'Indie Flower', cursive;
   cursor: pointer;
 }
+.score {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 200px;
+  border: 1px solid lightgrey;
+  background-color: #232931;
+}
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 20px;
+}
+.score-text {
+  display: flex;
+  column-gap: 6px;
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.reset-button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: #4ECCA3;
+}
+.reset-button button {
+  color: #4ECCA3;
+  font-size: 20px;
+  background-color: #393E49;
+  padding: 10px;
+}
