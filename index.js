@@ -51,6 +51,8 @@ if (Ethiopia > America) {
   document.querySelector("h1").innerHTML = "Ethiopia Wins!";
   document.querySelector(".heading .usa-flag").removeAttribute("src");
   document.querySelector("h1").style.fontSize = "6rem";
+  var audio = new Audio("./audio/ethiopia.mp3");
+  audio.play();
   result = "Ethiopia";
 }
 
@@ -58,6 +60,8 @@ else if (Ethiopia < America) {
   document.querySelector("h1").innerHTML = "America Wins!";
   document.querySelector(".heading img").removeAttribute("src");
   document.querySelector("h1").style.fontSize = "6rem";
+  var audio = new Audio("./audio/america.mp3");
+  audio.play();
   result = "America";
 }
 
@@ -65,6 +69,8 @@ else if (Ethiopia === America) {
   document.querySelector("h1").innerHTML = "Draw!";
   document.querySelector(".heading img").removeAttribute("src");
   document.querySelector(".heading .usa-flag").removeAttribute("src");
+  var audio = new Audio("./audio/drawn.mp3");
+  audio.play();
   result = "draw";
 }
 
